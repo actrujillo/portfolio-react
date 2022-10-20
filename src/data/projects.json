@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "title": "True Store",
+    "description": "Shopping Cart hecho en React utilizando API y Hooks. First mobile design.",
+    "img": "https://i.ibb.co/mCRjNcd/store.png",
+    "url": "https://truestore.netlify.app/",
+    "github": "https://github.com/actrujillo/store"
+  },
+  {
+    "id": 2,
+    "title": "Priceando",
+    "description": "Creada para solucionar el problema de emprendedores con los precios: margen y ganancia.",
+    "img": "https://i.ibb.co/LCb2Xr8/priceando.png",
+    "url": "https://priceando.netlify.app/",
+    "github": "https://github.com/actrujillo/priceando"
+  },
+  {
+    "id": 3,
+    "title": "Como esta el tiempo?",
+    "description": "Consulta a una API sobre el tiempo actual y mi punto de vista con respecto a esa informacion.",
+    "img": "https://i.ibb.co/SxsgxZj/comoestaeltiempo.png",
+    "url": "https://comoestaeltiempo.netlify.app/",
+    "github": "https://github.com/actrujillo/tiempo"
+  },
+  {
+    "id": 4,
+    "title": "To do list",
+    "description": "Aplicacion creada para resolver un problema cotidiano como memorizar los productos que hacen falta.",
+    "img": "https://i.ibb.co/vd4bNMf/todo.png",
+    "url": "https://hey-todolist.netlify.app/",
+    "github": "https://github.com/actrujillo/To-do-list"
+  },
+  {
+    "id": 5,
+    "title": "Lista de compras",
+    "description": "Aplicacion creada para resolver un problema cotidiano como memorizar los productos que hacen falta.",
+    "img": "https://i.ibb.co/G0ZM0bN/listita.png",
+    "url": "https://summerhack-22.web.app/reto5/index.html",
+    "github": "https://github.com/actrujillo/retos-summer/tree/main/reto5"
+  },
+
+  {
+    "id": 6,
+    "title": "Disney+",
+    "description": "Maquetacion del diseño completo de la web de Disney+ adaptable a distintos dispositivos.",
+    "img": "https://i.ibb.co/FJPZZVm/disney.png",
+    "url": "https://summerhack-22.web.app/reto4/index.html",
+    "github": "https://github.com/actrujillo/retos-summer/tree/main/reto4"
+  },
+
+  {
+    "id": 7,
+    "title": "Google",
+    "description": "Pagina web diseñada para emular la entrada principal de Google en su version escritorio.",
+    "img": "https://i.ibb.co/KWTVV7J/google.png",
+    "url": "https://summerhack-22.web.app/reto3/index.html",
+    "github": "https://github.com/actrujillo/retos-summer/tree/main/reto3"
+  },
+
+  {
+    "id": 8,
+    "title": "Podcast",
+    "description": "Puesta en practica la adaptabilidad de la aplicacion dedicada a un podcast.",
+    "img": "https://i.ibb.co/gt0nrNS/podcast.png",
+    "url": "https://summerhack-22.web.app/reto2/index.html",
+    "github": "https://github.com/actrujillo/retos-summer/tree/main/reto2"
+  },
+
+  {
+    "id": 9,
+    "title": "Juego match",
+    "description": "Aplicacion diseñada para que dos jugadores lleguen a un posible match en base a los personajes de la serie The Office.",
+    "img": "https://i.ibb.co/cCnC1hb/juego.png",
+    "url": "https://summerhack-22.web.app/reto6/index.html",
+    "github": "https://github.com/actrujillo/retos-summer/tree/main/reto6"
+  }
+]
