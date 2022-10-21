@@ -1,10 +1,10 @@
-import Typical from "react-typical";
-import { Box, Text } from "@chakra-ui/react";
+// import Typical from "react-typical";
+// import { Box, Text } from "@chakra-ui/react";
 
 export default function Intro() {
   return (
     <>
-      <Box
+      {/* <Box
         w="100%"
         h="100vh"
         backgroundColor="#020c1b"
@@ -19,7 +19,7 @@ export default function Intro() {
             wrapper="p"
           />
         </Text>
-      </Box>
+      </Box> */}
     </>
   );
 }
