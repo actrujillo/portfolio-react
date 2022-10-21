@@ -7,7 +7,7 @@ export default function Header(props) {
 
   return (
     <Box
-      w="60%"
+      w={["60%",'50%','50%','35%']}
       display="flex"
       position="fixed"
       right="0px"
@@ -16,7 +16,7 @@ export default function Header(props) {
     >
       <Flex
         position="absolute"
-        left="160px"
+        left={["165px", '310px', '320px', '290px', '380px', '590px']}
         top="15px"
         onClick={() => setOpen(!open)}
       >

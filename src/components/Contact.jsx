@@ -3,7 +3,7 @@ import { Flex, Text, Button } from "@chakra-ui/react";
 export default function Contact() {
   return (
     <Flex
-      p="1.5rem"
+      p={["1.5rem", "3rem"]}
       minHeight="80vh"
       flexDirection="column"
       justifyContent="center"
@@ -14,7 +14,7 @@ export default function Contact() {
         color="grey.light"
         fontWeight="600"
         fontFamily="body"
-        fontSize="1.5rem"
+        fontSize={["1.5rem", "2rem"]}
         m="1rem 0 1rem"
         textTransform="capitalize"
       >
@@ -24,8 +24,9 @@ export default function Contact() {
         as="p"
         color="grey.slate"
         mb="1rem"
-        fontSize="1rem"
+        fontSize={["1rem",'1rem','1.2rem','1.4rem']}
         textAlign="center"
+        w={['100%','80%']}
       >
         Currently, I'm looking for my first job as a developer, if you like my
         profile, please don't hesitate to contact me.
@@ -37,10 +38,10 @@ export default function Contact() {
         color="principal"
         fontFamily="mono"
         fontWeight="200"
-        marginTop='2rem'
+        marginTop="2rem"
         p="2rem"
         textTransform="capitalize"
-        w="40%"
+        w={["50%", "50%", "30%", "20%"]}
         _hover={{ bg: "hover" }}
         _active={{ bg: "navy" }}
       >

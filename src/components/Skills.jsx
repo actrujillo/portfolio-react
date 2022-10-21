@@ -15,8 +15,8 @@ export default function Skills() {
   return (
     <>
       <Flex
-        p="1.5rem"
-        minHeight="100vh"
+        p={["1.5rem", "3rem"]}
+        minHeight={["100vh",'50vh']}
         justifyContent="space-around"
         flexDirection="column"
       >
@@ -25,7 +25,7 @@ export default function Skills() {
           color="grey.light"
           fontWeight="600"
           fontFamily="body"
-          fontSize="1.5rem"
+          fontSize={["1.5rem", "2rem"]}
           m="1rem 0 1rem"
         >
           Skills
@@ -36,7 +36,7 @@ export default function Skills() {
               key={index}
               src={image}
               alt="skills"
-              w="30%"
+              w={["30%",'30%','15%','10%']}
               m=".5rem"
               p=".5rem"
               borderRadius="1rem"

@@ -7,20 +7,27 @@ export default function Projects() {
 
   return (
     <>
-      <Flex wrap="wrap" p="1.5rem" minHeight="100vh">
+      <Flex wrap="wrap" flexDirection="column" p={["1.5rem", "3rem"]} minHeight="100vh">
         <Text
           as="h2"
           color="grey.light"
           fontWeight="600"
           fontFamily="body"
-          fontSize="1.5rem"
+          fontSize={["1.5rem", "2rem"]}
           m="1rem 0 1rem"
         >
           Projects
         </Text>
-        {projects.map((project) => (
-          <Item {...project} key={project.id} />
-        ))}
+        <Flex
+          maxWidth="100%"
+          flexDirection="row"
+          flexWrap="wrap"
+          justifyContent="center"
+        >
+          {projects.map((project) => (
+            <Item {...project} key={project.id} />
+          ))}
+        </Flex>
       </Flex>
     </>
   );

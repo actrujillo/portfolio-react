@@ -28,33 +28,31 @@ export default function Home() {
 
   return (
     <>
-      {/* {loading ? (
+      {loading ? (
         <Intro />
       ) : (
         <>
-          <Header />
-          <h1>Hola mundo</h1>
+          <Header open={open} setOpen={setOpen}></Header>
+          {!open ? (
+            <Box sx={basicBoxStyles}>
+              <Principal />
+              <AboutMe />
+              <Projects />
+              <Skills />
+              <Contact />
+              <Footer />
+            </Box>
+          ) : (
+            <Box sx={basicBoxStyles} filter="auto" blur="4px">
+              <Principal />
+              <AboutMe />
+              <Projects />
+              <Skills />
+              <Contact />
+              <Footer />
+            </Box>
+          )}
         </>
-      )} */}
-      <Header open={open} setOpen={setOpen}></Header>
-      {!open ? (
-        <Box sx={basicBoxStyles}>
-          <Principal />
-          <AboutMe />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </Box>
-      ) : (
-        <Box sx={basicBoxStyles} filter="auto" blur="4px">
-          <Principal />
-          <AboutMe />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </Box>
       )}
     </>
   );

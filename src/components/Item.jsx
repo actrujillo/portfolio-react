@@ -49,7 +49,8 @@ export default function Item(props) {
           display="flex"
           borderRadius="5px"
           flexDirection="column"
-          height="300px"
+          height={["300px", "280px"]}
+          width={["auto", "500px"]}
           justifyContent="space-around"
           overflow="hidden"
           position="relative"
@@ -71,16 +72,25 @@ export default function Item(props) {
             float="left"
             w="100%"
             fontWeight="bold"
-            fontSize="1.2rem"
+            fontSize={["1.2rem", "1.4rem", "1.6rem"]}
             color="#fff"
           >
             {title}
           </Text>
-          <Text as="p" color="grey.slate" fontSize=".9rem" fontWeight="600">
+          <Text
+            as="p"
+            color="grey.slate"
+            fontSize={[".9rem", "1rem", "1.1rem"]}
+            fontWeight="600"
+          >
             {description}
           </Text>
           <Flex zIndex="2" position="relative" margin="0" width="100%">
-            <a href={github} target="_blank" style={{ width: "1.5rem", marginRight:'1.5rem' }}>
+            <a
+              href={github}
+              target="_blank"
+              style={{ width: "1.5rem", marginRight: "1.5rem" }}
+            >
               <GitHubIcon />
             </a>
             <a href={url} target="_blank" style={{ width: "1.5rem" }}>

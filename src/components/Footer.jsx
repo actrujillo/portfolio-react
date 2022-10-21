@@ -122,7 +122,7 @@ export default function Footer() {
           </a>
         </ListItem>
       </UnorderedList>{" "}
-      <Text as="h5" fontFamily="mono" fontSize=".7rem">
+      <Text as="h5" fontFamily="mono" fontSize={[".7rem",'.8rem','.9rem','1rem']}>
         Ariel Trujillo, 2022
       </Text>
     </Flex>

@@ -17,11 +17,15 @@ export default function Menu() {
         minHeight="100vh"
         w="100%"
       >
-        <Flex flexDirection="column" alignItems="center" p="2rem">
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          p={["2rem", "6rem", "6rem", "8rem"]}
+        >
           <OrderedList fontFamily="mono">
             <ListItem marginBottom="2rem">
               <Link
-                to="/"
+                to="/about"
                 color="#ccd6f6"
                 textDecoration="none"
                 _hover={{ textDecoration: "none" }}
@@ -47,7 +51,12 @@ export default function Menu() {
             _hover={{ bg: "rgba(100,255,218,0.1)", outline: "none" }}
             _active={{ bg: "rgba(100,255,218,0.1)", outline: "none" }}
           >
-            Resume
+            <a
+              href="https://drive.google.com/file/d/1A3_SgEC24I8mhrhBGOppWZtUESYrgGpN/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
           </Button>
         </Flex>
       </Box>
