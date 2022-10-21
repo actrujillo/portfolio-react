@@ -2,21 +2,21 @@ import { Image, Flex, Text } from "@chakra-ui/react";
 
 export default function Skills() {
   const images = [
-    "/public/html.png",
-    "/public/css.png",
-    "/public/javascript.png",
-    "/public/react.png",
-    "/public/bootstrap.png",
-    "/public/chakra.png",
-    "/public/github.png",
-    "/public/styled.png",
+    "https://i.ibb.co/z4nrJdX/html.png",
+    "https://i.ibb.co/VHJ7X1n/css.png",
+    "https://i.ibb.co/X8CPzhw/javascript.png",
+    "https://i.ibb.co/BVy1y0s/react.png",
+    "https://i.ibb.co/R0N5Hcc/bootstrap.png",
+    "https://i.ibb.co/9WTfLPy/chakra.png",
+    "https://i.ibb.co/2s5T1DP/github.png",
+    "https://i.ibb.co/6wYbTvW/styled.png",
   ];
 
   return (
     <>
       <Flex
         p={["1.5rem", "3rem"]}
-        minHeight={["100vh",'50vh']}
+        minHeight={["100vh", "50vh"]}
         justifyContent="space-around"
         flexDirection="column"
       >
@@ -36,7 +36,7 @@ export default function Skills() {
               key={index}
               src={image}
               alt="skills"
-              w={["30%",'30%','15%','10%']}
+              w={["30%", "30%", "15%", "10%"]}
               m=".5rem"
               p=".5rem"
               borderRadius="1rem"
