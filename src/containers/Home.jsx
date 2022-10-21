@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Intro2 from "../components/Intro2";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ export default function Home() {
   return (
     <>
       {loading ? (
-        <Intro />
+        <Intro2 />
       ) : (
         <>
           <Header open={open} setOpen={setOpen}></Header>
