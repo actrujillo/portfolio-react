@@ -15,6 +15,7 @@ export default function Skills() {
   return (
     <>
       <Flex
+      id='skills'
         p={["1.5rem", "3rem"]}
         minHeight={["100vh", "50vh"]}
         justifyContent="space-around"

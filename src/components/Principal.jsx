@@ -39,22 +39,22 @@ export default function Principal() {
         >
           FrontEnd Developer.
         </Heading>
-        <Button
-          bg="navy"
-          border="1px"
-          borderColor="principal"
-          color="principal"
-          fontFamily="mono"
-          fontWeight="200"
-          p="2rem"
-          w={["65%", "50%", "50%", "30%"]}
-          _hover={{ bg: "hover" }}
-          _active={{ bg: "navy" }}
-        >
-          <a href="https://www.linkedin.com/in/ariel-trujillo/" target="_blank">
+        <a href="https://www.linkedin.com/in/ariel-trujillo/" target="_blank">
+          <Button
+            bg="navy"
+            border="1px"
+            borderColor="principal"
+            color="principal"
+            fontFamily="mono"
+            fontWeight="200"
+            p="2rem"
+            w={["65%", "50%", "50%", "30%"]}
+            _hover={{ bg: "hover" }}
+            _active={{ bg: "navy" }}
+          >
             Check my LinkedIn
-          </a>
-        </Button>
+          </Button>
+        </a>
       </Flex>
     </>
   );

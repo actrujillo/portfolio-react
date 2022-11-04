@@ -7,7 +7,13 @@ export default function Projects() {
 
   return (
     <>
-      <Flex wrap="wrap" flexDirection="column" p={["1.5rem", "3rem"]} minHeight="100vh">
+      <Flex
+        id="projects"
+        wrap="wrap"
+        flexDirection="column"
+        p={["1.5rem", "3rem"]}
+        minHeight="100vh"
+      >
         <Text
           as="h2"
           color="grey.light"

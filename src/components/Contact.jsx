@@ -3,6 +3,7 @@ import { Flex, Text, Button } from "@chakra-ui/react";
 export default function Contact() {
   return (
     <Flex
+    id="contact"
       p={["1.5rem", "3rem"]}
       minHeight="80vh"
       flexDirection="column"

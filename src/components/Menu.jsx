@@ -8,6 +8,10 @@ import {
 } from "@chakra-ui/react";
 
 export default function Menu() {
+  const styleItem = {
+    color: "#64ffda",
+    textDecoration: "none",
+  };
   return (
     <>
       <Box
@@ -23,24 +27,25 @@ export default function Menu() {
           p={["2rem", "6rem", "6rem", "8rem"]}
         >
           <OrderedList fontFamily="mono">
-            <ListItem marginBottom="2rem">
-              <Link
-                to="/about"
-                color="#ccd6f6"
-                textDecoration="none"
-                _hover={{ textDecoration: "none" }}
-              >
+            <ListItem marginBottom="2rem" color="#ccd6f6">
+              <a href="#about" style={styleItem}>
                 About
-              </Link>
+              </a>
             </ListItem>
             <ListItem color="#ccd6f6" marginBottom="2rem">
-              Projects
+              <a href="#projects" style={styleItem}>
+                Projects
+              </a>
             </ListItem>
             <ListItem color="#ccd6f6" marginBottom="2rem">
-              Skills
+              <a href="#skills" style={styleItem}>
+                Skills
+              </a>
             </ListItem>
             <ListItem color="#ccd6f6" marginBottom="2rem">
-              Contact
+              <a href="#contact" style={styleItem}>
+                Contact
+              </a>
             </ListItem>
           </OrderedList>
           <Button

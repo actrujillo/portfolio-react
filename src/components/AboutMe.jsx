@@ -5,6 +5,7 @@ export default function AboutMe() {
   return (
     <>
       <Box
+        id="about"
         p={["1.5rem", "3rem"]}
         minHeight="100vh"
         display="flex"
