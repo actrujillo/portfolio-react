@@ -1,13 +1,14 @@
 import { Turn as Hamburger } from "hamburger-react";
 import Menu from "./Menu";
 import { Flex, Box } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function Header(props) {
   const { open, setOpen } = props;
 
   return (
     <Box
-      w={["60%",'50%','50%','35%']}
+      w={["60%", "50%", "50%", "35%"]}
       display="flex"
       position="fixed"
       right="0px"
@@ -16,13 +17,13 @@ export default function Header(props) {
     >
       <Flex
         position="absolute"
-        left={["165px", '310px', '320px', '290px', '380px', '590px']}
+        left={["165px", "310px", "320px", "290px", "380px", "590px"]}
         top="15px"
         onClick={() => setOpen(!open)}
       >
-        <Hamburger></Hamburger>
+        <Hamburger toggled={open} toggle={setOpen} />
       </Flex>
-      {open && <Menu />}
+      {open && <Menu open={open} setOpen={setOpen} />}
     </Box>
   );
 }

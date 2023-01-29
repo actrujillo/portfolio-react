@@ -1,5 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
-import projects from "../data/projects.json";
+import projects from "../data/projects1.json";
 import Item from "./Item";
 
 export default function Projects() {

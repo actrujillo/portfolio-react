@@ -1,13 +1,15 @@
-import {
-  OrderedList,
-  ListItem,
-  Box,
-  Button,
-  Link,
-  Flex,
-} from "@chakra-ui/react";
+import { OrderedList, ListItem, Box, Button, Flex } from "@chakra-ui/react";
 
-export default function Menu() {
+export default function Menu(props) {
+  const { open, setOpen } = props;
+
+  const Items = [
+    { href: "#about", text: "About" },
+    { href: "#projects", text: "Projects" },
+    { href: "#skills", text: "Skills" },
+    { href: "#contact", text: "Contact" },
+  ];
+
   const styleItem = {
     color: "#64ffda",
     textDecoration: "none",
@@ -27,26 +29,17 @@ export default function Menu() {
           p={["2rem", "6rem", "6rem", "8rem"]}
         >
           <OrderedList fontFamily="mono">
-            <ListItem marginBottom="2rem" color="#ccd6f6">
-              <a href="#about" style={styleItem}>
-                About
-              </a>
-            </ListItem>
-            <ListItem color="#ccd6f6" marginBottom="2rem">
-              <a href="#projects" style={styleItem}>
-                Projects
-              </a>
-            </ListItem>
-            <ListItem color="#ccd6f6" marginBottom="2rem">
-              <a href="#skills" style={styleItem}>
-                Skills
-              </a>
-            </ListItem>
-            <ListItem color="#ccd6f6" marginBottom="2rem">
-              <a href="#contact" style={styleItem}>
-                Contact
-              </a>
-            </ListItem>
+            {Items.map((item, index) => (
+              <ListItem key={index} marginBottom="2rem" color="#ccd6f6">
+                <a
+                  href={item.href}
+                  style={styleItem}
+                  onClick={() => setOpen(!open)}
+                >
+                  {item.text}
+                </a>
+              </ListItem>
+            ))}
           </OrderedList>
           <Button
             bg="transparent"
@@ -59,6 +52,7 @@ export default function Menu() {
             <a
               href="https://drive.google.com/file/d/1A3_SgEC24I8mhrhBGOppWZtUESYrgGpN/view?usp=sharing"
               target="_blank"
+              onClick={() => setOpen(!open)}
             >
               Resume
             </a>

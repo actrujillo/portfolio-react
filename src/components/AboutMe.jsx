@@ -22,7 +22,7 @@ export default function AboutMe() {
         >
           About Me
         </Text>
-        <Flex flexDirection="column" alignItems="center">
+        <Flex flexDirection="column">
           <Text
             as="p"
             color="grey.slate"

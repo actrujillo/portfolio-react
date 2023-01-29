@@ -6,6 +6,8 @@ export default function Skills() {
     "https://i.ibb.co/VHJ7X1n/css.png",
     "https://i.ibb.co/X8CPzhw/javascript.png",
     "https://i.ibb.co/BVy1y0s/react.png",
+    "https://i.ibb.co/ZgvsDFK/firebase.png",
+    "https://i.ibb.co/7Qcz7bs/tailwind.png",
     "https://i.ibb.co/R0N5Hcc/bootstrap.png",
     "https://i.ibb.co/9WTfLPy/chakra.png",
     "https://i.ibb.co/2s5T1DP/github.png",
@@ -15,7 +17,7 @@ export default function Skills() {
   return (
     <>
       <Flex
-      id='skills'
+        id="skills"
         p={["1.5rem", "3rem"]}
         minHeight={["100vh", "50vh"]}
         justifyContent="space-around"
@@ -31,20 +33,35 @@ export default function Skills() {
         >
           Skills
         </Text>
-        <Flex maxWidth="100%" flexWrap="wrap" justifyContent="center" h="100%">
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt="skills"
-              w={["30%", "30%", "15%", "10%"]}
-              m=".5rem"
-              p=".5rem"
-              borderRadius="1rem"
-              filter="invert(1%) sepia(100%) saturate(160%) hue-rotate(95deg) brightness(90%) contrast(100%)"
-              _hover={{ transition: ".3s", filter: "none" }}
-            ></Image>
-          ))}
+        <Flex
+          maxWidth="100%"
+          flexWrap="wrap"
+          justifyContent="center"
+          alignItems="center"
+          h="100%"
+        >
+          <Flex
+            flexDirection="row"
+            justifyContent="center"
+            flexWrap="wrap"
+            w="75%"
+          >
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                alt="skills"
+                w={["30%", "30%", "15%", "15%"]}
+                maxHeight="128px"
+                m=".5rem"
+                p=".5rem"
+                borderRadius="1rem"
+                filter="invert(1%) sepia(100%) saturate(160%) hue-rotate(95deg) brightness(90%) contrast(100%)"
+                objectFit="contain"
+                _hover={{ transition: ".3s", filter: "none" }}
+              ></Image>
+            ))}
+          </Flex>
         </Flex>
       </Flex>
     </>
